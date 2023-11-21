@@ -1,0 +1,168 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 80%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  background-color: #141414;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+ 
+  border-radius: 25px 25px 0 25px;
+}
+
+.card-image{
+  position: relative;
+  height: 10%;
+  width: 60%;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+
+@media (max-width: 1920px) {
+
+  .card-image{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+}
+@media (max-width: 1440px) {
+
+  .card-image{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+}
+@media (max-width: 1024px) {
+
+  .card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+  
+}
+
+.redes-equipe{
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redes-equipe img{
+  height: 50px;
+  width: 50px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+@media (max-width: 425px) {
+
+  .card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+}
+  
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  color: #ec2251;
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #5c5c5c;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #5c5c5c;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
